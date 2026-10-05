@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080';
+const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080').replace(/\/+$/, '');
 
 export async function createRoom(username, initialVideoId) {
   const response = await fetch(`${API_BASE_URL}/api/rooms`, {
