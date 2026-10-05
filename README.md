@@ -10,6 +10,7 @@
 - [🗄️ Database Architecture & Entity Relationships (ERD)](#️-database-architecture--entity-relationships-erd)
 - [🔄 Feature Integration & Workflow Dataflow](#-feature-integration--workflow-dataflow)
 - [🛡️ Role-Based Access Control (RBAC) Matrix](#️-role-based-access-control-rbac-matrix)
+- [📖 Swagger OpenAPI Documentation](#-swagger-openapi-documentation)
 - [📡 REST API & STOMP WebSocket Protocol](#-rest-api--stomp-websocket-protocol)
 - [🚀 Deployment Architecture (Neon DB + Render)](#-deployment-architecture-neon-db--render)
 - [💻 Local Setup & Development](#-local-setup--development)
@@ -177,6 +178,15 @@ sequenceDiagram
 | **Assign Roles (Promote/Demote)** | ✅ | ❌ | ❌ | `validateHostAuthority()` |
 | **Remove Participants** | ✅ | ❌ | ❌ | `validateHostAuthority()` |
 | **Send Live Chat & Voice** | ✅ | ✅ | ✅ | Open room participation |
+
+## 📖 Swagger OpenAPI Documentation
+
+Interactive Swagger UI and OpenAPI 3.0 specifications are integrated into the application:
+
+| Environment | Swagger UI Endpoint | OpenAPI JSON Spec |
+| :--- | :--- | :--- |
+| **Production (Render)** | [https://youtube-watch-party-o8ti.onrender.com/swagger-ui/index.html](https://youtube-watch-party-o8ti.onrender.com/swagger-ui/index.html) | [https://youtube-watch-party-o8ti.onrender.com/v3/api-docs](https://youtube-watch-party-o8ti.onrender.com/v3/api-docs) |
+| **Local Development** | [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) | [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs) |
 
 ---
 
