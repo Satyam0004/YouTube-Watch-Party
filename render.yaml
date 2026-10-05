@@ -1,0 +1,18 @@
+services:
+  # Backend Web Service (Spring Boot Docker)
+  - type: web
+    name: youtube-watchparty-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: PORT
+        value: 8080
+
